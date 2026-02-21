@@ -2,26 +2,27 @@ import type { Metadata } from 'next';
 import { SectionWrapper } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'À propos de Sovana',
-  description: 'Découvrez la vision, la mission et les valeurs de Sovana, partenaire IT des PME ambitieuses.'
+  title: 'À propos de Sovana à Beauvais',
+  description:
+    'Découvrez la vision, la mission et les valeurs de Sovana : un accompagnement informatique professionnel, pédagogique et rassurant autour de Beauvais.'
 };
 
 const values = [
   {
     title: 'Rigueur',
-    text: 'Des analyses précises, des plans clairs, des livrables exploitables.'
+    text: 'Chaque intervention suit une méthode claire pour garantir des résultats fiables.'
   },
   {
     title: 'Performance',
-    text: 'Chaque action technique vise un gain mesurable pour votre activité.'
+    text: 'Nous améliorons vos usages numériques avec des actions concrètes et mesurables.'
   },
   {
     title: 'Fiabilité',
-    text: 'Des systèmes stables, sécurisés et pensés pour durer.'
+    text: 'Nous privilégions des solutions durables, stables et adaptées à votre réalité.'
   },
   {
     title: 'Clarté',
-    text: 'Un discours compréhensible, orienté décision et impact business.'
+    text: 'Nous expliquons simplement les choix techniques pour vous aider à décider en confiance.'
   }
 ];
 
@@ -30,22 +31,26 @@ export default function AboutPage() {
     <>
       <SectionWrapper
         eyebrow="À propos"
-        title="Sovana, partenaire stratégique de votre transformation IT"
-        description="Nous accompagnons les dirigeants et équipes opérationnelles dans la construction d’un système informatique robuste, agile et aligné avec les objectifs de croissance."
+        title="Sovana, un partenaire numérique de confiance"
+        description="Basée autour de Beauvais, Sovana accompagne particuliers, seniors et professionnels avec une expertise technique solide et une approche humaine."
       >
         <div className="grid gap-4 md:grid-cols-2">
           <article className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <h3 className="text-lg font-semibold text-text">Vision</h3>
-            <p className="mt-3 text-sm text-muted">Permettre à chaque PME de disposer d’un socle technologique digne des meilleures organisations, sans complexité inutile.</p>
+            <p className="mt-3 text-sm text-muted">
+              Rendre l’informatique moderne réellement utile, accessible et rassurante pour tous les profils d’utilisateurs.
+            </p>
           </article>
           <article className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
             <h3 className="text-lg font-semibold text-text">Mission</h3>
-            <p className="mt-3 text-sm text-muted">Transformer l’IT en levier de productivité, de fiabilité et de croissance durable grâce à une exécution méthodique.</p>
+            <p className="mt-3 text-sm text-muted">
+              Sécuriser et optimiser votre environnement numérique grâce à des services informatiques locaux, pédagogiques et professionnels.
+            </p>
           </article>
         </div>
       </SectionWrapper>
 
-      <SectionWrapper title="Nos valeurs" description="Un cadre d’intervention exigeant pour des résultats consistants.">
+      <SectionWrapper title="Nos valeurs" description="Un cadre clair pour bâtir une relation durable et efficace.">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {values.map((value) => (
             <article key={value.title} className="rounded-2xl border border-white/10 bg-white/[0.02] p-6">
@@ -57,21 +62,21 @@ export default function AboutPage() {
       </SectionWrapper>
 
       <SectionWrapper
-        title="Approche méthodique"
-        description="Notre méthode associe expertise technique avancée et compréhension fine des priorités business."
+        title="Une approche méthodique, orientée résultats"
+        description="Notre manière de travailler combine expertise technique et compréhension des enjeux de terrain."
       >
         <ol className="space-y-3 rounded-2xl border border-white/10 bg-white/[0.02] p-6 text-sm text-muted">
           <li>
-            <span className="font-semibold text-text">1. Diagnostic : </span>analyse terrain, priorités, risques et dépendances.
+            <span className="font-semibold text-text">1. Écoute : </span>nous comprenons votre contexte, vos contraintes et vos attentes.
           </li>
           <li>
-            <span className="font-semibold text-text">2. Priorisation : </span>plan d’actions classé par impact et faisabilité.
+            <span className="font-semibold text-text">2. Diagnostic : </span>nous identifions les causes réelles des difficultés rencontrées.
           </li>
           <li>
-            <span className="font-semibold text-text">3. Exécution : </span>implémentations progressives, mesurées et documentées.
+            <span className="font-semibold text-text">3. Intervention : </span>nous appliquons des solutions simples, robustes et documentées.
           </li>
           <li>
-            <span className="font-semibold text-text">4. Amélioration continue : </span>suivi des KPI, ajustements et montée en maturité.
+            <span className="font-semibold text-text">4. Suivi : </span>nous vous transmettons les bons réflexes pour rester autonome et serein.
           </li>
         </ol>
       </SectionWrapper>

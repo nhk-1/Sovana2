@@ -2,52 +2,53 @@ import type { Metadata } from 'next';
 import { SectionWrapper } from '@/components/ui';
 
 export const metadata: Metadata = {
-  title: 'Services IT pour PME et entrepreneurs',
-  description: 'Découvrez les services Sovana : audit IT, automatisation, infrastructure, monitoring, outils internes et support.'
+  title: 'Services informatiques à Beauvais',
+  description:
+    'Assistance informatique à domicile, dépannage informatique, audit, monitoring et support : découvrez les services Sovana pour Beauvais et ses alentours.'
 };
 
 const services = [
   {
     title: 'Audit & Conseil IT',
-    description: 'Cartographie de votre existant, évaluation des risques et définition d’une feuille de route priorisée.',
-    problems: 'Manque de vision IT, décisions techniques réactives, coûts cachés.',
-    benefits: 'Pilotage maîtrisé, réduction des risques, investissements ciblés.',
-    example: 'Audit 360° d’une PME multisite avec plan d’actions sur 12 mois.'
+    description: 'Analyse de vos usages et de votre matériel pour identifier les priorités techniques et les bonnes pratiques.',
+    problems: 'Parc informatique désorganisé, outils mal utilisés, budget mal orienté.',
+    benefits: 'Vision claire, plan d’action pragmatique, décisions plus sereines.',
+    example: 'Diagnostic complet pour une activité indépendante avec recommandations simples à appliquer.'
   },
   {
     title: 'Automatisation & Optimisation des processus',
-    description: 'Automatisation des flux métiers répétitifs et standardisation des routines opérationnelles.',
-    problems: 'Perte de temps, erreurs manuelles, faible traçabilité.',
-    benefits: 'Gains de productivité, meilleure fiabilité, équipes recentrées sur la valeur.',
-    example: 'Automatisation du cycle devis-facturation-relance pour un cabinet de services.'
+    description: 'Simplification des tâches répétitives (classement, sauvegardes, routines bureautiques).',
+    problems: 'Perte de temps, erreurs manuelles, étapes inutiles au quotidien.',
+    benefits: 'Temps gagné, meilleure fiabilité, usage plus confortable.',
+    example: 'Mise en place d’une routine automatisée de sauvegarde et d’archivage documentaire.'
   },
   {
     title: 'Infrastructure & Réseaux',
-    description: 'Conception, modernisation et sécurisation de votre socle technique.',
-    problems: 'Pannes récurrentes, architecture vieillissante, performance limitée.',
-    benefits: 'Haute disponibilité, sécurité renforcée, scalabilité.',
-    example: 'Refonte d’une architecture hybride avec segmentation réseau et sauvegarde robuste.'
+    description: 'Configuration et amélioration de votre réseau, Wi-Fi, postes et périphériques pour une base stable.',
+    problems: 'Connexion instable, imprimante indisponible, matériel mal paramétré.',
+    benefits: 'Réseau fiable, meilleure performance, moins d’interruptions.',
+    example: 'Reconfiguration complète d’un réseau domestique et professionnel léger à Beauvais.'
   },
   {
     title: 'Monitoring & Supervision',
-    description: 'Mise en place d’indicateurs, alertes intelligentes et tableaux de bord temps réel.',
-    problems: 'Incidents détectés trop tard, absence de visibilité, interventions subies.',
-    benefits: 'Anticipation des incidents, continuité de service, meilleure qualité opérationnelle.',
-    example: 'Déploiement d’un centre de supervision simplifié avec alerting multi-canal.'
+    description: 'Suivi préventif de vos équipements clés afin d’anticiper les incidents.',
+    problems: 'Pannes soudaines, absence de visibilité, interventions en urgence répétées.',
+    benefits: 'Moins d’imprévus, continuité de service, meilleure tranquillité.',
+    example: 'Mise en place d’alertes de capacité disque et d’état de sauvegarde.'
   },
   {
     title: 'Développement d’outils internes',
-    description: 'Création d’outils web internes pour vos flux critiques et votre pilotage.',
-    problems: 'Outils génériques inadaptés, multiplications des fichiers manuels.',
-    benefits: 'Processus unifiés, efficacité accrue, adoption facilitée.',
-    example: 'Développement d’un portail interne de suivi opérationnel et de KPI direction.'
+    description: 'Création d’outils simples pour fluidifier votre gestion quotidienne.',
+    problems: 'Tableaux dispersés, suivi manuel, manque de centralisation.',
+    benefits: 'Processus structurés, meilleure organisation, visibilité opérationnelle.',
+    example: 'Mini-outil interne de suivi clients et interventions pour petite structure.'
   },
   {
     title: 'Maintenance & Support',
-    description: 'Support utilisateur, maintenance préventive et curative avec engagements clairs.',
-    problems: 'Interruptions fréquentes, support non structuré, manque de réactivité.',
-    benefits: 'Stabilité quotidienne, assistance fiable, baisse des interruptions.',
-    example: 'Contrat de maintenance mensuel avec SLA et revue de performance trimestrielle.'
+    description: 'Assistance à distance et intervention à domicile avec un accompagnement pédagogique.',
+    problems: 'Blocages techniques récurrents, manque d’aide réactive, stress numérique.',
+    benefits: 'Support humain, résolution rapide, montée en autonomie des utilisateurs.',
+    example: 'Dépannage informatique à domicile pour senior avec reprise en main complète du poste.'
   }
 ];
 
@@ -55,8 +56,8 @@ export default function ServicesPage() {
   return (
     <SectionWrapper
       eyebrow="Services"
-      title="Un accompagnement complet pour fiabiliser votre IT"
-      description="Chaque mission est structurée autour de vos enjeux de croissance, de sécurité et de performance opérationnelle."
+      title="Des services informatiques locaux, utiles et compréhensibles"
+      description="Sovana intervient à Beauvais et dans l’Oise pour résoudre vos problèmes techniques avec méthode et pédagogie."
     >
       <div className="space-y-4">
         {services.map((service) => (

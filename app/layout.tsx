@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: siteConfig.url,
     email: siteConfig.email,
     telephone: siteConfig.phone,
-    areaServed: 'France',
+    areaServed: 'Beauvais et 20 km autour (Oise)',
     description: siteConfig.description
   };
   return (
