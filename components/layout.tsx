@@ -43,7 +43,7 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-6xl gap-10 px-6 py-12 md:grid-cols-3">
         <div>
           <p className="text-lg font-semibold text-text">Sovana</p>
-          <p className="mt-3 text-sm text-muted">Ingénierie informatique premium pour structurer votre croissance.</p>
+          <p className="mt-3 text-sm text-muted">Votre partenaire numérique de confiance à Beauvais et dans l’Oise.</p>
         </div>
         <div>
           <p className="text-sm font-semibold text-text">Liens rapides</p>
